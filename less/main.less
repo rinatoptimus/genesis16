@@ -1,0 +1,36 @@
+@import "fonts.less";
+@import "colors.less";
+
+body {
+	font-family: @body-font;
+	    table {
+			width: 100%;
+			border-spacing: 0;
+			border: 1px solid @black-border;
+			    th {
+					background: @th-background;
+					text-align: left;
+				}
+				tbody tr:nth-child(odd) {
+				    background-color: @tr-tbody-odd;
+				}
+				th, td {
+					border-left: 1px solid @black-border;
+					border-right: 1px solid @black-border;
+				}
+				.red-row, 
+				tbody tr:nth-child(odd).red-row, 
+				.red-row.yellow-row, 
+				tbody tr:nth-child(odd).yellow-row.red-row {
+				    background: @tr-click;
+				}
+				.yellow-row, 
+				tbody tr:nth-child(odd).yellow-row {
+				    background: @tr-hover;
+				}
+		}		
+		.legend {
+			position: absolute;
+			margin-top: 100px;
+		}
+}

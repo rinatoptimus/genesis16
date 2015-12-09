@@ -1,0 +1,37 @@
+[{
+    "Position" : "Программист",
+        "Name" : "Евгений Попов",
+         "Age" : 37,
+         "Sex" : "М",
+     "Project" : "SmartFactory"
+}, {
+    "Position" : "Тестировщик",
+        "Name" : "Борис Королев",
+         "Age" : 34,
+         "Sex" : "М",
+     "Project" : "SmartFactory"
+}, {
+    "Position" : "Тестировщик",
+        "Name" : "Марк Якобсон",
+         "Age" : 60,
+         "Sex" : "М",
+     "Project" : "SmartFactory"
+}, {
+    "Position" : "Тестировщик",
+        "Name" : "Мария Ветлугина",
+         "Age" : 37,
+         "Sex" : "Ж",
+     "Project" : "SmartFactory"
+}, {
+    "Position" : "Тестировщик",
+        "Name" : "Лидия Высокова",
+         "Age" : 25,
+         "Sex" : "Ж",
+     "Project" : "SmartProject"
+}, {
+    "Position" : "Программист",
+        "Name" : "Алексей Грунт",
+         "Age" : 22,
+         "Sex" : "М",
+     "Project" : "SmartProject"
+}]

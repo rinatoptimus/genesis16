@@ -1,0 +1,575 @@
+{
+    "project": {
+        "name": "project",
+        "description": "",
+        "version": "0.1.0",
+        "url": ""
+    },
+    "files": {
+        "js/modules/pie-chart.js": {
+            "name": "js/modules/pie-chart.js",
+            "modules": {
+                "pie-chart.js": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "js/modules/table-generator.js": {
+            "name": "js/modules/table-generator.js",
+            "modules": {
+                "table-generator.js": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "js/modules/tr-color-switcher.js": {
+            "name": "js/modules/tr-color-switcher.js",
+            "modules": {
+                "tr-color-switcher.js": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "js/reqiurejs/require.js": {
+            "name": "js/reqiurejs/require.js",
+            "modules": {
+                "require.js": 1
+            },
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {
+        "pie-chart.js": {
+            "name": "pie-chart.js",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "js/modules/pie-chart.js",
+            "line": 1,
+            "description": "Добавляет на страницу круговую диаграмму (pie-chart). Зависимости: библиотека d3.js."
+        },
+        "table-generator.js": {
+            "name": "table-generator.js",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "js/modules/table-generator.js",
+            "line": 1,
+            "description": "Генерирует таблицу из файла JSON. Не имеет зависимостей."
+        },
+        "tr-color-switcher.js": {
+            "name": "tr-color-switcher.js",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "js/modules/tr-color-switcher.js",
+            "line": 1,
+            "description": "Добавляет подсветку для строк таблицы. Зависимости: библиотека jQuery."
+        },
+        "require.js": {
+            "name": "require.js",
+            "submodules": {},
+            "elements": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {},
+            "tag": "module",
+            "file": "js/reqiurejs/require.js",
+            "line": 1,
+            "description": "Файл библиотеки require.js, служащей для создания AMD-приложений."
+        }
+    },
+    "classes": {},
+    "elements": {},
+    "classitems": [
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 44,
+            "description": "Helper function for iterating over an array. If the func returns\na true value, it will break out of the loop.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 59,
+            "description": "Helper function for iterating over an array backwards. If the func\nreturns a true value, it will break out of the loop.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 82,
+            "description": "Cycles over properties in an object and calls a function for each\nproperty value. If the function returns a truthy value, then the\niteration is stopped.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 98,
+            "description": "Simple function to mix in properties from source into target,\nbut only if target does not already have a property of the same name.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 152,
+            "description": "Constructs an error with a pointer to an URL with more information.",
+            "params": [
+                {
+                    "name": "id",
+                    "description": "the error ID that maps to an ID on a web page.",
+                    "type": "String"
+                },
+                {
+                    "name": "message",
+                    "description": "human readable error.",
+                    "type": "String"
+                },
+                {
+                    "name": "err",
+                    "description": "the original error, if there is one.",
+                    "type": "Error",
+                    "optional": true
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Error"
+            },
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 220,
+            "description": "Trims the . and .. from an array of path segments.\nIt will keep a leading path segment if a .. will become\nthe first path segment, to help with module name lookups,\nwhich act like paths, but can be remapped. But the end result,\nall paths that use this function should look normalized.\nNOTE: this method MODIFIES the input array.",
+            "params": [
+                {
+                    "name": "ary",
+                    "description": "the array of path segments.",
+                    "type": "Array"
+                }
+            ],
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 252,
+            "description": "Given a relative module name, like ./something, normalize it to\na real name that can be mapped to a path.",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "the relative name",
+                    "type": "String"
+                },
+                {
+                    "name": "baseName",
+                    "description": "a real name that the name arg is relative\nto.",
+                    "type": "String"
+                },
+                {
+                    "name": "applyMap",
+                    "description": "apply the map config to the value. Should\nonly be done if this normalization is for a dependency ID.",
+                    "type": "Boolean"
+                }
+            ],
+            "return": {
+                "description": "normalized name",
+                "type": "String"
+            },
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 394,
+            "description": "Creates a module mapping that includes plugin prefix, module\nname, and path. If parentModuleMap is provided it will\nalso normalize the name via require.normalize()",
+            "params": [
+                {
+                    "name": "name",
+                    "description": "the module name",
+                    "type": "String"
+                },
+                {
+                    "name": "parentModuleMap",
+                    "description": "parent module map\nfor the module name, used to resolve relative names.",
+                    "type": "String",
+                    "optional": true
+                },
+                {
+                    "name": "isNormalized:",
+                    "description": "is the ID already normalized.\nThis is true if this call is done for a define() module ID.",
+                    "type": "Boolean"
+                },
+                {
+                    "name": "applyMap:",
+                    "description": "apply the map config to the ID.\nShould only be true if this map is for a dependency.",
+                    "type": "Boolean"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 545,
+            "description": "Internal method to transfer globalQueue items to this context's\ndefQueue.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 829,
+            "description": "Checks if the module is ready to define itself, and if so,\ndefine it.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1219,
+            "description": "Given an event from a script node, get the requirejs info from it,\nand then removes the event listeners on the node.",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "",
+                    "type": "Event"
+                }
+            ],
+            "return": {
+                "description": "",
+                "type": "Object"
+            },
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1275,
+            "description": "Set a configuration for the context.",
+            "params": [
+                {
+                    "name": "cfg",
+                    "description": "config object to integrate.",
+                    "type": "Object"
+                }
+            ],
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1462,
+            "description": "Converts a module name + .extension into an URL path.\n*Requires* the use of a module name. It does not support using\nplain URLs like nameToUrl.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1537,
+            "description": "Called to enable a module if it is still in the registry\nawaiting enablement. A second arg, parent, the parent module,\nis passed in for context, when this method is overridden by\nthe optimizer. Not shown here to keep code compact.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1550,
+            "description": "Internal method used by environment adapters to complete a load event.\nA load event could be a script load or just a load pass from a synchronous\nload call.",
+            "params": [
+                {
+                    "name": "moduleName",
+                    "description": "the name of the module to potentially complete.",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1607,
+            "description": "Converts a module name to a file path. Supports cases where\nmoduleName may actually be just an URL.\nNote that it **does not** call normalize on the moduleName,\nit is assumed to have already been normalized. This is an\ninternal API, not a public one. Use toUrl for the public API.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1678,
+            "description": "Executes a module callback function. Broken out as a separate function\nsolely to allow the build system to sequence the files in the built\nlayer in the right sequence.",
+            "access": "private",
+            "tagname": "",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1689,
+            "description": "callback for script loads, used to check status of loading.",
+            "params": [
+                {
+                    "name": "evt",
+                    "description": "the event from the browser for the script\nthat was loaded.",
+                    "type": "Event"
+                }
+            ],
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1711,
+            "description": "Callback for script errors.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1740,
+            "description": "Main entry point.\n\nIf the only argument to require is a string, then the module that\nis represented by that string is fetched for the appropriate context.\n\nIf the first argument is an array, then it will be treated as an array\nof dependency string names to fetch. An optional function callback can\nbe specified to execute when all of those dependencies are available.\n\nMake a local req variable to help Caja compliance (it assumes things\non a require that are not standardized), and to give a short\nname for minification/local scope use.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1790,
+            "description": "Support require.config() to make it easier to cooperate with other\nAMD loaders on globally agreed names.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1798,
+            "description": "Execute something after the current tick\nof the event loop. Override for other envs\nthat have a better solution than setTimeout.",
+            "params": [
+                {
+                    "name": "fn",
+                    "description": "function to execute later.",
+                    "type": "Function"
+                }
+            ],
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1808,
+            "description": "Export require as a global, but only if it does not already exist.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1855,
+            "description": "Any errors that require explicitly generates will be passed to this\nfunction. Intercept/override it if you want custom error handling.",
+            "params": [
+                {
+                    "name": "err",
+                    "description": "the error object.",
+                    "type": "Error"
+                }
+            ],
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1862,
+            "description": "Creates the node for the load command. Only used in browser envs.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 1875,
+            "description": "Does the request to load a module for the browser case.\nMake this a separate function to allow other environments\nto override it.",
+            "params": [
+                {
+                    "name": "context",
+                    "description": "the require context to find state.",
+                    "type": "Object"
+                },
+                {
+                    "name": "moduleName",
+                    "description": "the name of the module.",
+                    "type": "String"
+                },
+                {
+                    "name": "url",
+                    "description": "the URL to the module.",
+                    "type": "Object"
+                }
+            ],
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 2034,
+            "description": "The function that handles definitions of modules. Differs from\nrequire() in that a string for the module should be the first argument,\nand the function to execute after dependencies are loaded should\nreturn a value to define the module corresponding to the first argument's\nname.",
+            "class": "",
+            "module": "require.js"
+        },
+        {
+            "file": "js/reqiurejs/require.js",
+            "line": 2112,
+            "description": "Executes the text. Normally just uses eval, but can be modified\nto use a better, environment-specific call. Only used for transpiling\nloader plugins, not for plain JS modules.",
+            "params": [
+                {
+                    "name": "text",
+                    "description": "the text to execute/evaluate.",
+                    "type": "String"
+                }
+            ],
+            "class": "",
+            "module": "require.js"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " js/reqiurejs/require.js:152"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " js/reqiurejs/require.js:252"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " js/reqiurejs/require.js:394"
+        },
+        {
+            "message": "replacing incorrect tag: returns with return",
+            "line": " js/reqiurejs/require.js:1219"
+        },
+        {
+            "message": "Missing item type\nHelper function for iterating over an array. If the func returns\na true value, it will break out of the loop.",
+            "line": " js/reqiurejs/require.js:44"
+        },
+        {
+            "message": "Missing item type\nHelper function for iterating over an array backwards. If the func\nreturns a true value, it will break out of the loop.",
+            "line": " js/reqiurejs/require.js:59"
+        },
+        {
+            "message": "Missing item type\nCycles over properties in an object and calls a function for each\nproperty value. If the function returns a truthy value, then the\niteration is stopped.",
+            "line": " js/reqiurejs/require.js:82"
+        },
+        {
+            "message": "Missing item type\nSimple function to mix in properties from source into target,\nbut only if target does not already have a property of the same name.",
+            "line": " js/reqiurejs/require.js:98"
+        },
+        {
+            "message": "Missing item type\nConstructs an error with a pointer to an URL with more information.",
+            "line": " js/reqiurejs/require.js:152"
+        },
+        {
+            "message": "Missing item type\nTrims the . and .. from an array of path segments.\nIt will keep a leading path segment if a .. will become\nthe first path segment, to help with module name lookups,\nwhich act like paths, but can be remapped. But the end result,\nall paths that use this function should look normalized.\nNOTE: this method MODIFIES the input array.",
+            "line": " js/reqiurejs/require.js:220"
+        },
+        {
+            "message": "Missing item type\nGiven a relative module name, like ./something, normalize it to\na real name that can be mapped to a path.",
+            "line": " js/reqiurejs/require.js:252"
+        },
+        {
+            "message": "Missing item type\nCreates a module mapping that includes plugin prefix, module\nname, and path. If parentModuleMap is provided it will\nalso normalize the name via require.normalize()",
+            "line": " js/reqiurejs/require.js:394"
+        },
+        {
+            "message": "Missing item type\nInternal method to transfer globalQueue items to this context's\ndefQueue.",
+            "line": " js/reqiurejs/require.js:545"
+        },
+        {
+            "message": "Missing item type\nChecks if the module is ready to define itself, and if so,\ndefine it.",
+            "line": " js/reqiurejs/require.js:829"
+        },
+        {
+            "message": "Missing item type\nGiven an event from a script node, get the requirejs info from it,\nand then removes the event listeners on the node.",
+            "line": " js/reqiurejs/require.js:1219"
+        },
+        {
+            "message": "Missing item type\nSet a configuration for the context.",
+            "line": " js/reqiurejs/require.js:1275"
+        },
+        {
+            "message": "Missing item type\nConverts a module name + .extension into an URL path.\n*Requires* the use of a module name. It does not support using\nplain URLs like nameToUrl.",
+            "line": " js/reqiurejs/require.js:1462"
+        },
+        {
+            "message": "Missing item type\nCalled to enable a module if it is still in the registry\nawaiting enablement. A second arg, parent, the parent module,\nis passed in for context, when this method is overridden by\nthe optimizer. Not shown here to keep code compact.",
+            "line": " js/reqiurejs/require.js:1537"
+        },
+        {
+            "message": "Missing item type\nInternal method used by environment adapters to complete a load event.\nA load event could be a script load or just a load pass from a synchronous\nload call.",
+            "line": " js/reqiurejs/require.js:1550"
+        },
+        {
+            "message": "Missing item type\nConverts a module name to a file path. Supports cases where\nmoduleName may actually be just an URL.\nNote that it **does not** call normalize on the moduleName,\nit is assumed to have already been normalized. This is an\ninternal API, not a public one. Use toUrl for the public API.",
+            "line": " js/reqiurejs/require.js:1607"
+        },
+        {
+            "message": "Missing item type\nExecutes a module callback function. Broken out as a separate function\nsolely to allow the build system to sequence the files in the built\nlayer in the right sequence.",
+            "line": " js/reqiurejs/require.js:1678"
+        },
+        {
+            "message": "Missing item type\ncallback for script loads, used to check status of loading.",
+            "line": " js/reqiurejs/require.js:1689"
+        },
+        {
+            "message": "Missing item type\nCallback for script errors.",
+            "line": " js/reqiurejs/require.js:1711"
+        },
+        {
+            "message": "Missing item type\nMain entry point.\n\nIf the only argument to require is a string, then the module that\nis represented by that string is fetched for the appropriate context.\n\nIf the first argument is an array, then it will be treated as an array\nof dependency string names to fetch. An optional function callback can\nbe specified to execute when all of those dependencies are available.\n\nMake a local req variable to help Caja compliance (it assumes things\non a require that are not standardized), and to give a short\nname for minification/local scope use.",
+            "line": " js/reqiurejs/require.js:1740"
+        },
+        {
+            "message": "Missing item type\nSupport require.config() to make it easier to cooperate with other\nAMD loaders on globally agreed names.",
+            "line": " js/reqiurejs/require.js:1790"
+        },
+        {
+            "message": "Missing item type\nExecute something after the current tick\nof the event loop. Override for other envs\nthat have a better solution than setTimeout.",
+            "line": " js/reqiurejs/require.js:1798"
+        },
+        {
+            "message": "Missing item type\nExport require as a global, but only if it does not already exist.",
+            "line": " js/reqiurejs/require.js:1808"
+        },
+        {
+            "message": "Missing item type\nAny errors that require explicitly generates will be passed to this\nfunction. Intercept/override it if you want custom error handling.",
+            "line": " js/reqiurejs/require.js:1855"
+        },
+        {
+            "message": "Missing item type\nCreates the node for the load command. Only used in browser envs.",
+            "line": " js/reqiurejs/require.js:1862"
+        },
+        {
+            "message": "Missing item type\nDoes the request to load a module for the browser case.\nMake this a separate function to allow other environments\nto override it.",
+            "line": " js/reqiurejs/require.js:1875"
+        },
+        {
+            "message": "Missing item type\nThe function that handles definitions of modules. Differs from\nrequire() in that a string for the module should be the first argument,\nand the function to execute after dependencies are loaded should\nreturn a value to define the module corresponding to the first argument's\nname.",
+            "line": " js/reqiurejs/require.js:2034"
+        },
+        {
+            "message": "Missing item type\nExecutes the text. Normally just uses eval, but can be modified\nto use a better, environment-specific call. Only used for transpiling\nloader plugins, not for plain JS modules.",
+            "line": " js/reqiurejs/require.js:2112"
+        }
+    ]
+}
